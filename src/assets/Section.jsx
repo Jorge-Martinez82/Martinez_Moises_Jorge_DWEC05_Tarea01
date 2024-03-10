@@ -1,7 +1,7 @@
 import React from 'react';
 import Article from "./Article.jsx";
 import data from "../data.js";
-const Frame = () => {
+const Section = () => {
     return (
         <div>
             <main>
@@ -22,4 +22,4 @@ const Frame = () => {
     );
 };
 
-export default Frame;
+export default Section;
