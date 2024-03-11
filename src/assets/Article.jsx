@@ -1,5 +1,7 @@
 import React from 'react';
 
+// el componente Article tendra la estructura HTML requerida y definiremos las props que aceptara como
+// parametros para la imagen el nombre y la edad
 const Article = (props) => {
     return (
         <div>

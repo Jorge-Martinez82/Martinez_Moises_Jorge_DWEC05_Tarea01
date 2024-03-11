@@ -1,3 +1,4 @@
+// importo React, el componente Article y el archivo data
 import React from 'react';
 import Article from "./Article.jsx";
 import data from "../data.js";
@@ -6,11 +7,13 @@ const Section = () => {
         <div>
             <main>
                 <section className="container">
+                    {/*el numero de cumpleaños sera la longitud de data*/}
                     <h3>Hoy hay {data.length} cumpleaños</h3>
                     {data.map(persona => (
-                        // Por cada objeto en data, creamos un componente Article con los datos correspondientes
+                        // por cada objeto en data creamos un componente Article pasandole como props los datos correspondientes
                         <Article
-                            key={persona.id} // Es importante proporcionar una clave única para cada componente en un bucle
+                            key={persona.id} //  le pasamos el id como clave unica para cada componente que creemos
+                            // le pasamos las propiedades que definimos en Article
                             name={persona.name}
                             age={persona.age}
                             image={persona.image}
@@ -21,5 +24,4 @@ const Section = () => {
         </div>
     );
 };
-
-export default Section;
+export default Section; // exportamos el componente
